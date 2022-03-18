@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <head>
-        <meta charset="utf-8" />
-        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
-        <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <meta name="theme-color" content="#000000" />
-        <meta name="description" content="Web site created using create-react-app" />
-        <link href="./style/css/main.css" rel="stylesheet" />
-        <!--
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Web site created using create-react-app" />
+    <link href="./style/css/main.css" rel="stylesheet" />
+    <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from the HTML.
@@ -16,27 +17,37 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-        <title>MSpoty</title>
-    </head>
-    <body>
-        <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
+    <title>MSpoty</title>
+</head>
 
-        <header class="header"></header>
+<body>
+    <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
 
-        <div class="menu"></div>
-        <div id="root"></div>
-        <div class="main_content">
-            <div class="song_list">
-                <!-- ..лист элементов(список, но при нажатии на кнопку - отображается как плитка) -->
-                <!-- по всей обрласти экрана в такт музыке будет проигрываться визуализация музона -->
-                <!-- плавно сменяющаяся обложна песни и фото автора (если есть) -->
-                <div class="about">
-                    <span class="about__name">Коффе мой друг</span>
-                    <p class="about__description"></p>
-                    <img src="./images/exz/eea392ee15e05cf2df6e56b546585078.jpg" alt="author" class="about__image" />
-                    <input type="button" class="about__listen" />
+    <header class="header"></header>
+
+
+    <div id="root"></div>
+    <div class="main_content">
+        <div class="song_list">
+            <!-- ..лист элементов(список, но при нажатии на кнопку - отображается как плитка) -->
+            <!-- по всей обрласти экрана в такт музыке будет проигрываться визуализация музона -->
+            <!-- плавно сменяющаяся обложна песни и фото автора (если есть) -->
+            <div class="container">
+                <div class="menu">
+                    <h1>MENU</h1>
                 </div>
-                <ol class="song_list">
+                <div class="content">
+                    <div class="about">
+                        <span class="about__name">Коффе мой друг</span>
+                        <p class="about__description"></p>
+                        <!-- <img src="./images/exz/eea392ee15e05cf2df6e56b546585078.jpg" alt="author" class="about__image" /> -->
+                        <input type="button" class="about__listen" />
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- <ol class="song_list">
                     <li class="song">
                         <input value="+" type="button" class="song__add" />
                         <img src="" alt="" class="song__icon" />
@@ -86,8 +97,9 @@
                     <img src="" alt="" class="action_stop" />
                     <img src="" alt="" class="action__forvard" />
                 </div>
-            </div>
+            </div> -->
         </div>
         <footer class="footer"></footer>
-    </body>
+</body>
+
 </html>
