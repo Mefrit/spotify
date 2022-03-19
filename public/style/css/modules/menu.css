@@ -1,0 +1,59 @@
+.menu {
+  width: 220px;
+  background-color: #100e0e;
+  min-height: 100%;
+  padding-top: 24px;
+  padding-left: 22px;
+}
+.menu__actions-playlist {
+  margin-top: 30px;
+}
+.menu__logo {
+  width: 120px;
+  padding-bottom: 25px;
+}
+.menu__logo svg {
+  color: #feffff;
+}
+.menu__actions {
+  margin-left: -5px;
+  list-style: none;
+}
+.menu__action {
+  margin-bottom: 5px;
+}
+.menu__action button {
+  cursor: pointer;
+  color: #b3b3b3;
+  font-weight: 900;
+  font-size: 0.725rem;
+  line-height: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  background: none;
+}
+.menu__action button svg {
+  margin-right: 15px;
+  fill: #feffff;
+}
+.menu__action-active button {
+  color: #feffff;
+}
+.menu__actions-playlist {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b3b3b336;
+}
+.menu__action-playlist button svg {
+  background: #b3b3b3;
+  padding: 6px;
+  width: 23px;
+  height: 23px;
+}
+.menu__action-loveplaylist button svg {
+  color: #b3b3b3;
+  background: linear-gradient(135deg, #450af5, #c4efd9);
+}

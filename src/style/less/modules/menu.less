@@ -1,0 +1,71 @@
+@import "./colors.less";
+.menu {
+    width: 220px;
+    background-color: @black;
+    min-height: 100%;
+    padding-top: 24px;
+    padding-left: 22px;
+    &__actions-playlist {
+        margin-top: 30px;
+    }
+    &__logo {
+        width: 120px;
+        padding-bottom: 25px;
+        svg {
+            color: @white;
+        }
+    }
+    &__actions {
+        margin-left: -5px;
+        list-style: none;
+    }
+    &__action {
+        margin-bottom: 5px;
+        button {
+            cursor: pointer;
+            color: @btn_gray;
+            font-weight: 900;
+            font-size: 0.725rem;
+            line-height: 1rem;
+            text-transform: none;
+            letter-spacing: normal;
+            display: flex;
+            align-items: center;
+            border: none;
+            padding: 5px;
+            background: none;
+            svg {
+                margin-right: 15px;
+                fill: @white;
+            }
+        }
+    }
+    &__action-active {
+        button {
+            color: @white;
+        }
+    }
+    &__actions-playlist {
+        padding-bottom: 10px;
+        border-bottom: 1px solid @border_gray;
+    }
+    &__action-playlist {
+        button {
+            svg {
+                background: @btn_gray;
+                padding: 6px;
+                width: 23px;
+                height: 23px;
+                // border: 1px solid white;
+            }
+        }
+    }
+    &__action-loveplaylist {
+        button {
+            svg {
+                color: @btn_gray;
+                background: linear-gradient(135deg, #450af5, #c4efd9);
+            }
+        }
+    }
+}

@@ -1,0 +1,117 @@
+@import "./colors.less";
+.audio_player {
+    color: @white;
+    background-color: @back_audio;
+    display: flex;
+    min-height: 10%;
+    justify-content: space-between;
+    align-items: center;
+    &__interface {
+        align-items: center;
+        width: 35%;
+        display: flex;
+        flex-direction: column;
+    }
+}
+.song {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin-left: 5px;
+    &__icon {
+        width: 70px;
+    }
+    &__info {
+        margin-left: 10px;
+    }
+    &__title {
+        color: @white;
+        font-size: 0.875rem;
+    }
+    &__author {
+        color: @btn_gray;
+        font-size: 0.6875rem;
+    }
+    &__add2collection {
+        background: none;
+        border: 0px;
+        margin-left: 15px;
+        svg {
+            fill: @btn_player_arrows;
+        }
+    }
+}
+.action {
+    display: flex;
+    width: 100%;
+    max-width: 200px;
+    justify-content: space-around;
+    margin-bottom: 5px;
+    &__back,
+    &__forward,
+    &__order,
+    &__turn {
+        background: none;
+        border: none;
+        svg {
+            fill: @btn_player_arrows;
+            transform: scale(0.8);
+        }
+    }
+    &__play {
+        background-color: @white;
+        width: 28px;
+        height: 28px;
+        border-radius: 50%;
+        border: none;
+        background-size: 120%;
+        svg {
+            margin: auto;
+            margin-top: 3px;
+            transform: scale(0.8);
+        }
+    }
+    &__progress {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        input[type="range"] {
+            width: 100%;
+            background-color: @back_progress;
+            height: 2px;
+            color: red;
+        }
+
+        span {
+            margin: 0px 5px;
+            color: @btn_gray;
+            font-size: 0.6875rem;
+        }
+    }
+}
+.options {
+    display: flex;
+    align-items: center;
+    margin-right: 5px;
+    &__volumeicon {
+        background: none;
+        border: 0px;
+    }
+    svg {
+        fill: @btn_player_arrows;
+        margin-right: 8px;
+        margin-top: 5px;
+    }
+    &__volume {
+        width: 100%;
+        background-color: @back_progress;
+        height: 2px;
+        color: red;
+    }
+}
+.song_progress {
+    height: 5px;
+    border-top: 3px solid @white;
+}
