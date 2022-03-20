@@ -1,6 +1,6 @@
 @import "./colors.less";
 .menu {
-    width: 220px;
+    width: 270px;
     background-color: @black;
     min-height: 100%;
     padding-top: 24px;
@@ -36,13 +36,16 @@
             background: none;
             svg {
                 margin-right: 15px;
-                fill: @white;
+                fill: @btn_gray;
             }
         }
     }
     &__action-active {
         button {
             color: @white;
+            svg {
+                fill: @white;
+            }
         }
     }
     &__actions-playlist {

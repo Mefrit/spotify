@@ -1,4 +1,5 @@
 .audio_player {
+  border-top: 0.1px solid #b3b3b319;
   color: #feffff;
   background-color: #181818;
   display: flex;
@@ -117,7 +118,7 @@
   border-top: 3px solid #feffff;
 }
 .menu {
-  width: 220px;
+  width: 270px;
   background-color: #100e0e;
   min-height: 100%;
   padding-top: 24px;
@@ -156,14 +157,17 @@
 }
 .menu__action button svg {
   margin-right: 15px;
-  fill: #feffff;
+  fill: #b3b3b3;
 }
 .menu__action-active button {
   color: #feffff;
 }
+.menu__action-active button svg {
+  fill: #feffff;
+}
 .menu__actions-playlist {
   padding-bottom: 10px;
-  border-bottom: 1px solid #b3b3b336;
+  border-bottom: 1px solid #b3b3b319;
 }
 .menu__action-playlist button svg {
   background: #b3b3b3;
@@ -179,7 +183,7 @@
   margin: 0px;
   padding: 0px;
   box-sizing: border-box;
-  font-family: "Montserrat", sans-serif;
+  font-family: sans-serif;
 }
 html,
 body {
@@ -189,13 +193,93 @@ body {
 .container {
   display: flex;
   width: 100%;
-  min-height: 90%;
+  height: 90%;
   max-height: 100vh;
   background-color: rgba(255, 255, 255, 0.3);
 }
 .content {
   width: 100%;
   color: #feffff;
-  background-color: #151313;
-  background-size: 40px 40px;
+  background: linear-gradient(174deg, #1e1e1e 0%, #161616 60%, #121212 100%);
+  padding-top: 75px;
+  overflow: auto;
+}
+.album_container {
+  padding: 15px 25px;
+  display: flex;
+  overflow: auto;
+  grid-gap: 24px;
+  width: 100%;
+}
+.album_container__title {
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.song_container {
+  display: flex;
+}
+.album {
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 180px;
+  padding: 15px;
+}
+.album__image_container {
+  display: inline-block;
+  border-radius: 10px;
+  width: 100%;
+  padding-bottom: 15px;
+  height: auto;
+  box-sizing: content-box;
+}
+.album__image {
+  width: 100%;
+  border-radius: 5px;
+}
+.album__title {
+  padding-bottom: 10px;
+  width: 100%;
+  font-size: 0.75rem;
+  font-weight: 900;
+}
+.album__description {
+  width: 100%;
+  color: #b9b8b8;
+  font-size: 0.655rem;
+  font-family: "Montserrat", sans-serif;
+}
+.album:hover {
+  border-radius: 5px;
+  background-color: #282828;
+}
+.play_btn {
+  background-color: #feffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-size: 120%;
+}
+.play_btn__image {
+  margin: auto;
+  margin-top: 3px;
+  transform: scale(0.8);
+}
+.play_btn__image-album {
+  transform: scale(1);
+}
+.play_btn-album {
+  opacity: 1;
+  background-color: #1ed760;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0px 5px 10px #05050575;
+  position: relative;
+  top: -50px;
+  left: 105px;
+}
+.album:hover .play_btn-album {
+  opacity: 1;
 }

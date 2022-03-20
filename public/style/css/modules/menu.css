@@ -1,5 +1,5 @@
 .menu {
-  width: 220px;
+  width: 270px;
   background-color: #100e0e;
   min-height: 100%;
   padding-top: 24px;
@@ -38,14 +38,17 @@
 }
 .menu__action button svg {
   margin-right: 15px;
-  fill: #feffff;
+  fill: #b3b3b3;
 }
 .menu__action-active button {
   color: #feffff;
 }
+.menu__action-active button svg {
+  fill: #feffff;
+}
 .menu__actions-playlist {
   padding-bottom: 10px;
-  border-bottom: 1px solid #b3b3b336;
+  border-bottom: 1px solid #b3b3b319;
 }
 .menu__action-playlist button svg {
   background: #b3b3b3;
