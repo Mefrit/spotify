@@ -27,16 +27,8 @@
     </head>
 
     <body>
-        <!-- <noscript>You need to enable JavaScript to run this app.</noscript> -->
-
         <header class="header"></header>
-
         <div id="root"></div>
-
-        <!-- ..лист элементов(список, но при нажатии на кнопку - отображается как плитка) -->
-        <!-- по всей обрласти экрана в такт музыке будет проигрываться визуализация музона -->
-        <!-- плавно сменяющаяся обложна песни и фото автора (если есть) -->
-
         <div class="container">
             <div class="menu">
                 <div class="menu__logo">
@@ -50,47 +42,57 @@
                 </div>
                 <ul class="menu__actions">
                     <li class="menu__action menu__action-active">
-                        <button>
-                            <svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"
-                                ></path>
-                            </svg>
-                            <span>Главная</span>
-                        </button>
+                        <svg
+                            role="img"
+                            height="24"
+                            width="24"
+                            viewBox="0 0 24 24"
+                            class="menu__image menu__image-active"
+                        >
+                            <path
+                                d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"
+                            ></path>
+                        </svg>
+                        <a href="#" class="menu__link menu__link-active">Главная</a>
                     </li>
                     <li class="menu__action">
-                        <button>
-                            <svg role="img" height="24" width="24" viewBox="0 0 24 24">
-                                <path
-                                    d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"
-                                ></path>
-                            </svg>
-                            <span>Поиск</span>
-                        </button>
+                        <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="menu__image">
+                            <path
+                                d="M10.533 1.279c-5.18 0-9.407 4.14-9.407 9.279s4.226 9.279 9.407 9.279c2.234 0 4.29-.77 5.907-2.058l4.353 4.353a1 1 0 101.414-1.414l-4.344-4.344a9.157 9.157 0 002.077-5.816c0-5.14-4.226-9.28-9.407-9.28zm-7.407 9.279c0-4.006 3.302-7.28 7.407-7.28s7.407 3.274 7.407 7.28-3.302 7.279-7.407 7.279-7.407-3.273-7.407-7.28z"
+                            ></path>
+                        </svg>
+                        <a href="#" class="menu__link">Поиск</a>
                     </li>
                 </ul>
 
-                <ul class="menu__actions menu__actions-playlist">
+                <ul class="menu__actions">
                     <li class="menu__action menu__action-playlist">
-                        <button>
-                            <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16">
-                                <path
-                                    d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"
-                                ></path>
-                            </svg>
-                            <span>Создать плейлист</span>
-                        </button>
+                        <svg
+                            role="img"
+                            height="12"
+                            width="12"
+                            viewBox="0 0 16 16"
+                            class="menu__image menu__image-playlist"
+                        >
+                            <path
+                                d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"
+                            ></path>
+                        </svg>
+                        <a href="#" class="menu__link">Создать плейлист</a>
                     </li>
-                    <li class="menu__action menu__action-playlist menu__action-loveplaylist">
-                        <button>
-                            <svg role="img" height="12" width="12" aria-hidden="true" viewBox="0 0 16 16">
-                                <path
-                                    d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"
-                                ></path>
-                            </svg>
-                            <span>Любимые треки</span>
-                        </button>
+                    <li class="menu__action menu__action-playlist">
+                        <svg
+                            role="img"
+                            height="12"
+                            width="12"
+                            viewBox="0 0 16 16"
+                            class="menu__image menu__image-loveplaylist"
+                        >
+                            <path
+                                d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"
+                            ></path>
+                        </svg>
+                        <a href="#" class="menu__link">Любимые треки</a>
                     </li>
                 </ul>
             </div>
@@ -116,20 +118,32 @@
                                     </svg>
                                 </button>
                             </div>
-
                             <h5 class="album__title">Peace</h5>
                             <p class="album__description">Peaceful instrumentals to help you keep calm.</p>
                         </div>
                     </div>
                 </section>
-                <h3 class="album_container__title">Недавно прослушанно</h3>
+                <h3 class="album_container__title">Прослушай эти шоу</h3>
                 <section class="album_container">
                     <div class="album_container__song_container">
                         <div class="album">
                             <div class="album__image_container">
                                 <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
                             </div>
-
                             <h5 class="album__title">Разговорчики</h5>
                             <p class="album__description">podcast.adnosiny.by</p>
                         </div>
@@ -138,8 +152,21 @@
                         <div class="album">
                             <div class="album__image_container">
                                 <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
                             </div>
-
                             <h5 class="album__title">Peace</h5>
                             <p class="album__description">Peaceful instrumentals to help you keep calm.</p>
                         </div>
@@ -147,44 +174,334 @@
                     <div class="album_container__song_container">
                         <div class="album">
                             <div class="album__image_container">
-                                <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
+                                <img src="./images/albums/4.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
                             </div>
-
-                            <h5 class="album__title">Разговорчики</h5>
-                            <p class="album__description">podcast.adnosiny.by</p>
+                            <h5 class="album__title">Испанский</h5>
+                            <p class="album__description">Мностранный это нечто</p>
+                        </div>
+                    </div>
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Аниме песни</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
                         </div>
                     </div>
                     <div class="album_container__song_container">
                         <div class="album">
                             <div class="album__image_container">
                                 <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
                             </div>
-
-                            <h5 class="album__title">Peace</h5>
+                            <h5 class="album__title">Peaceful Peaceful</h5>
                             <p class="album__description">Peaceful instrumentals to help you keep calm.</p>
                         </div>
                     </div>
-
                     <div class="album_container__song_container">
                         <div class="album">
                             <div class="album__image_container">
-                                <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
+                                <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
                             </div>
-
-                            <h5 class="album__title">Разговорчики</h5>
+                            <h5 class="album__title">Английский язык</h5>
+                            <p class="album__description">podcast.adnosiny.by</p>
+                        </div>
+                    </div>
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/6.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Ortamlambda</h5>
                             <p class="album__description">podcast.adnosiny.by</p>
                         </div>
                     </div>
                 </section>
-                <h3 class="album_container__title">Недавно прослушанно</h3>
+                <h3 class="album_container__title">Выбор редакции (чарты)</h3>
                 <section class="album_container">
                     <div class="album_container__song_container">
                         <div class="album">
                             <div class="album__image_container">
                                 <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
                             </div>
-
                             <h5 class="album__title">Разговорчики</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
+                        </div>
+                    </div>
+
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Английский язык</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
+                        </div>
+                    </div>
+
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/4.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Испанский</h5>
+                            <p class="album__description">Иностранный это несто</p>
+                        </div>
+                    </div>
+
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/6.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Ortamlambda</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
+                        </div>
+                    </div>
+
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">1,2,3 испанский</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
+                        </div>
+                    </div>
+
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Аниме песни</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
+                        </div>
+                    </div>
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Аниме песни</h5>
+                            <p class="album__description">Podcast.adnosiny.by.</p>
+                        </div>
+                    </div>
+                </section>
+                <h3 class="album_container__title">Развитие</h3>
+                <section class="album_container">
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/7.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">Важное</h5>
+                            <p class="album__description">Все о самом важном.</p>
+                        </div>
+                    </div>
+
+                    <div class="album_container__song_container">
+                        <div class="album">
+                            <div class="album__image_container">
+                                <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
+                                <button class="play_btn play_btn-album">
+                                    <svg
+                                        class="play_btn__image play_btn__image-album"
+                                        role="img"
+                                        height="16"
+                                        xmlns="http://www.w3.org/2000/svg"
+                                        width="16"
+                                        viewBox="0 0 16 16"
+                                    >
+                                        <path
+                                            d="M3 1.713a.7.7 0 011.05-.607l10.89 6.288a.7.7 0 010 1.212L4.05 14.894A.7.7 0 013 14.288V1.713z"
+                                        ></path>
+                                    </svg>
+                                </button>
+                            </div>
+                            <h5 class="album__title">1,2,3 испанский</h5>
                             <p class="album__description">Podcast.adnosiny.by.</p>
                         </div>
                     </div>
@@ -197,7 +514,6 @@
                 <img src="./images/assets/1.jpg" alt="" class="song__icon" />
                 <div class="song__info">
                     <span class="song__title">Песня 1</span>
-
                     <p class="song__author">Автор 1</p>
                 </div>
                 <button class="song__add2collection">
@@ -257,9 +573,9 @@
                     </button>
                 </div>
                 <div class="action__progress">
-                    <span>0:21</span>
-                    <input type="range" min="0" max="100" step="1" value="21" />
-                    <span>2:04</span>
+                    <span class="action__time">0:21</span>
+                    <input class="action__progress_range" type="range" min="0" max="100" step="1" value="21" />
+                    <span class="action__time">2:04</span>
                 </div>
             </div>
             <div class="options">
@@ -268,7 +584,7 @@
                         role="presentation"
                         height="16"
                         width="16"
-                        aria-label="Высокая громкость"
+                        class="options__image"
                         id="volume-icon"
                         viewBox="0 0 16 16"
                     >
@@ -282,59 +598,6 @@
                 <!--  -->
             </div>
         </div>
-
-        <!-- <ol class="song_list">
-                    <li class="song">
-                        <input value="+" type="button" class="song__add" />
-                        <img src="" alt="" class="song__icon" />
-                        <p class="song__author">Автор 1</p>
-                        <span class="song__title">Песня 111</span><span class="song__timecount"> 03.00.33</span>
-                    </li>
-                    <li class="song">
-                        <input type="button" value="+" class="song__add" />
-                        <img src="" alt="" class="song__icon" />
-                        <p class="song__author">Автор 2</p>
-                        <span class="song__title">Песня 2</span><span class="song__timecount">03.00.33</span>
-                    </li>
-                </ol>
-                <div class="albums">
-                    <div>
-                        <img src="" alt="" class="albums__image" /><span class="albums__title">Альбом 1</span>
-                        <p>Поп</p>
-                    </div>
-                </div>
-                <div class="albums">
-                    <div>
-                        <img src="" alt="" class="albums__image" /><span class="albums__title">Альбом 2</span>
-                        <p>Поп</p>
-                    </div>
-                </div>
-                <div class="albums">
-                    <div>
-                        <img src="" alt="" class="albums__image" /><span class="albums__title">Альбом 3</span>
-                        <p>Металл</p>
-                    </div>
-                </div>
-            </div>
-            <div class="audio_player">
-                <div class="song">
-                    <input value="+" type="button" class="song__add" />
-                    <img src="" alt="" class="song__icon" />
-                    <p class="song__author">Автор 1</p>
-                    <span class="song__title">Песня 1</span><span class="song__timecount"> 03.00.33</span>
-                </div>
-                <div class="song_progress">
-                    <span class="song_progress__time_start"></span>
-                    <div class="progress"></div>
-                    <span class="song_progress__time_end"></span>
-                </div>
-                <div class="action">
-                    <img src="" alt="" class="action__back" />
-                    <img src="" alt="" class="action_stop" />
-                    <img src="" alt="" class="action__forvard" />
-                </div>
-            </div> -->
-
         <footer class="footer"></footer>
     </body>
 </html>

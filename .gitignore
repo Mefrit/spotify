@@ -10,6 +10,7 @@
 
 # production
 /build
+/public/style
 
 # misc
 .DS_Store

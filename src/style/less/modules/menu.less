@@ -17,58 +17,64 @@
     }
     &__actions {
         margin-left: -5px;
+        padding-bottom: 20px;
         list-style: none;
+    }
+    &__link {
+        text-decoration: none;
+        color: @btn_gray;
+    }
+    &__link-active {
+        color: @white;
     }
     &__action {
         margin-bottom: 5px;
-        button {
-            cursor: pointer;
-            color: @btn_gray;
-            font-weight: 900;
-            font-size: 0.725rem;
-            line-height: 1rem;
-            text-transform: none;
-            letter-spacing: normal;
-            display: flex;
-            align-items: center;
-            border: none;
-            padding: 5px;
-            background: none;
-            svg {
-                margin-right: 15px;
-                fill: @btn_gray;
-            }
+        cursor: pointer;
+        font-weight: 900;
+        font-size: 0.725rem;
+        line-height: 1rem;
+        text-transform: none;
+        letter-spacing: normal;
+        display: flex;
+        align-items: center;
+        border: none;
+        padding: 5px;
+        background: none;
+    }
+    &__action:hover {
+        .menu__link {
+            color: @white;
+        }
+        .menu__image {
+            fill: @white;
         }
     }
+    &__image {
+        margin-right: 15px;
+        fill: @btn_gray;
+    }
+    &__image-active {
+        fill: @white;
+    }
     &__action-active {
-        button {
-            color: @white;
-            svg {
-                fill: @white;
-            }
-        }
+        color: @white;
     }
     &__actions-playlist {
         padding-bottom: 10px;
         border-bottom: 1px solid @border_gray;
     }
-    &__action-playlist {
-        button {
-            svg {
-                background: @btn_gray;
-                padding: 6px;
-                width: 23px;
-                height: 23px;
-                // border: 1px solid white;
-            }
-        }
+    &__image-playlist {
+        fill: @black;
+        background: @gray;
+        padding: 6px;
+        width: 23px;
+        height: 23px;
     }
-    &__action-loveplaylist {
-        button {
-            svg {
-                color: @btn_gray;
-                background: linear-gradient(135deg, #450af5, #c4efd9);
-            }
-        }
+    &__image-loveplaylist {
+        padding: 6px;
+        width: 23px;
+        height: 23px;
+        color: @btn_gray;
+        background: linear-gradient(135deg, #450af5, #c4efd9);
     }
 }

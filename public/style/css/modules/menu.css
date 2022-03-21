@@ -17,14 +17,19 @@
 }
 .menu__actions {
   margin-left: -5px;
+  padding-bottom: 20px;
   list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+.menu__link-active {
+  color: #feffff;
 }
 .menu__action {
   margin-bottom: 5px;
-}
-.menu__action button {
   cursor: pointer;
-  color: #b3b3b3;
   font-weight: 900;
   font-size: 0.725rem;
   line-height: 1rem;
@@ -36,27 +41,37 @@
   padding: 5px;
   background: none;
 }
-.menu__action button svg {
+.menu__action:hover .menu__link {
+  color: #feffff;
+}
+.menu__action:hover .menu__image {
+  fill: #feffff;
+}
+.menu__image {
   margin-right: 15px;
   fill: #b3b3b3;
 }
-.menu__action-active button {
-  color: #feffff;
-}
-.menu__action-active button svg {
+.menu__image-active {
   fill: #feffff;
+}
+.menu__action-active {
+  color: #feffff;
 }
 .menu__actions-playlist {
   padding-bottom: 10px;
   border-bottom: 1px solid #b3b3b319;
 }
-.menu__action-playlist button svg {
-  background: #b3b3b3;
+.menu__image-playlist {
+  fill: #100e0e;
+  background: #b9b8b8;
   padding: 6px;
   width: 23px;
   height: 23px;
 }
-.menu__action-loveplaylist button svg {
+.menu__image-loveplaylist {
+  padding: 6px;
+  width: 23px;
+  height: 23px;
   color: #b3b3b3;
   background: linear-gradient(135deg, #450af5, #c4efd9);
 }
