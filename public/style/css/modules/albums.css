@@ -4,6 +4,7 @@
   overflow: auto;
   grid-gap: 24px;
   width: 100%;
+  box-sizing: border-box;
 }
 .albumcontainer__title {
   padding-top: 5px;
@@ -11,6 +12,7 @@
   padding-left: 25px;
 }
 .songcontainer {
+  box-sizing: border-box;
   display: flex;
 }
 .album {
@@ -21,6 +23,7 @@
   align-items: center;
   width: 185px;
   padding: 15px;
+  box-sizing: border-box;
 }
 .album__image_container {
   display: inline-block;
@@ -77,6 +80,7 @@
   margin: auto;
   margin-top: 3px;
   transform: scale(0.8);
+  cursor: pointer;
 }
 .playbtn__image-album {
   transform: scale(1);

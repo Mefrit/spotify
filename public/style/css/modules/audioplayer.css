@@ -58,10 +58,13 @@
   background: none;
   border: none;
   cursor: pointer;
-}
-.action__imgturn {
   fill: #b3b3b3;
-  transform: scale(0.8);
+}
+.action__back:hover,
+.action__forward:hover,
+.action__order:hover,
+.action__turn:hover {
+  fill: #feffff;
 }
 .action__progress {
   width: 100%;

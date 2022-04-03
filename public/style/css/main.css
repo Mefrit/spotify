@@ -4,6 +4,7 @@
   overflow: auto;
   grid-gap: 24px;
   width: 100%;
+  box-sizing: border-box;
 }
 .albumcontainer__title {
   padding-top: 5px;
@@ -11,6 +12,7 @@
   padding-left: 25px;
 }
 .songcontainer {
+  box-sizing: border-box;
   display: flex;
 }
 .album {
@@ -21,6 +23,7 @@
   align-items: center;
   width: 185px;
   padding: 15px;
+  box-sizing: border-box;
 }
 .album__image_container {
   display: inline-block;
@@ -77,6 +80,7 @@
   margin: auto;
   margin-top: 3px;
   transform: scale(0.8);
+  cursor: pointer;
 }
 .playbtn__image-album {
   transform: scale(1);
@@ -156,10 +160,13 @@
   background: none;
   border: none;
   cursor: pointer;
-}
-.action__imgturn {
   fill: #b3b3b3;
-  transform: scale(0.8);
+}
+.action__back:hover,
+.action__forward:hover,
+.action__order:hover,
+.action__turn:hover {
+  fill: #feffff;
 }
 .action__progress {
   width: 100%;
@@ -280,16 +287,12 @@
   color: #b3b3b3;
   background: linear-gradient(135deg, #450af5, #c4efd9);
 }
-* {
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  font-family: sans-serif;
-}
 html,
 body {
   height: 100%;
   overflow: hidden;
+  margin: 0px;
+  padding: 0px;
 }
 .container {
   display: flex;

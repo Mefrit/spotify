@@ -58,12 +58,14 @@
         background: none;
         border: none;
         cursor: pointer;
-    }
-    &__imgturn {
         fill: @btn_player_arrows;
-        transform: scale(0.8);
     }
-
+    &__back:hover,
+    &__forward:hover,
+    &__order:hover,
+    &__turn:hover {
+        fill: @white;
+    }
     &__progress {
         width: 100%;
         display: flex;
