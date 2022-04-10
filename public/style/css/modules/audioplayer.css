@@ -1,5 +1,5 @@
-.audioplayer {
-  border-top: 0.1px solid #b3b3b319;
+.audio-player {
+  border-top: 1px solid #b3b3b319;
   color: #feffff;
   background-color: #181818;
   display: flex;
@@ -7,7 +7,7 @@
   justify-content: space-between;
   align-items: center;
 }
-.audioplayer__interface {
+.audio-player__interface {
   align-items: center;
   width: 35%;
   display: flex;
@@ -29,16 +29,16 @@
 }
 .song__title {
   color: #feffff;
-  font-size: 0.875rem;
+  font-size: 0.8rem;
 }
 .song__author {
   color: #b3b3b3;
-  font-size: 0.6875rem;
+  font-size: 0.7rem;
 }
 .song__add2collection {
   cursor: pointer;
   background: none;
-  border: 0px;
+  border: 0;
   margin-left: 15px;
 }
 .song__imgadd2collection {
@@ -73,24 +73,24 @@
   justify-content: space-between;
   align-items: center;
 }
-.action__progress-range {
+.action__progress_range {
   width: 100%;
   background-color: #b3b3b3;
   height: 2px;
 }
 .action__time {
-  margin: 0px 5px;
+  margin: 0 5px;
   color: #b3b3b3;
-  font-size: 0.6875rem;
+  font-size: 0.7rem;
 }
 .options {
   display: flex;
   align-items: center;
   margin-right: 15px;
 }
-.options__volumeicon {
+.options__volume-icon {
   background: none;
-  border: 0px;
+  border: 0;
   cursor: pointer;
 }
 .options__image {
@@ -104,7 +104,7 @@
   height: 2px;
   color: red;
 }
-.songprogress {
+.song-progress {
   height: 5px;
   border-top: 3px solid #feffff;
 }

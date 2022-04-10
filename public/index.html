@@ -9,25 +9,11 @@
         <link href="./style/css/main.css" rel="stylesheet" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;1,100;1,200&display=swap"
-            rel="stylesheet"
-        />
 
-        <!--
-      Notice the use of %PUBLIC_URL% in the tags above.
-      It will be replaced with the URL of the `public` folder during the build.
-      Only files inside the `public` folder can be referenced from the HTML.
-
-      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
-      work correctly both with client-side routing and a non-root public URL.
-      Learn how to configure a non-root public URL by running `npm run build`.
-    -->
         <title>MSpoty</title>
     </head>
 
     <body>
-        <header class="header"></header>
         <div id="root"></div>
         <div class="container">
             <div class="menu">
@@ -41,19 +27,19 @@
                     </svg>
                 </div>
                 <ul class="menu__actions">
-                    <li class="menu__action menu__action-active">
+                    <li class="menu__action menu__action_active">
                         <svg
                             role="img"
                             height="24"
                             width="24"
                             viewBox="0 0 24 24"
-                            class="menu__image menu__image-active"
+                            class="menu__image menu__image_active"
                         >
                             <path
                                 d="M13.5 1.515a3 3 0 00-3 0L3 5.845a2 2 0 00-1 1.732V21a1 1 0 001 1h6a1 1 0 001-1v-6h4v6a1 1 0 001 1h6a1 1 0 001-1V7.577a2 2 0 00-1-1.732l-7.5-4.33z"
                             ></path>
                         </svg>
-                        <a href="#" class="menu__link menu__link-active">Главная</a>
+                        <a href="#" class="menu__link menu__link_active">Главная</a>
                     </li>
                     <li class="menu__action">
                         <svg role="img" height="24" width="24" viewBox="0 0 24 24" class="menu__image">
@@ -72,7 +58,7 @@
                             height="12"
                             width="12"
                             viewBox="0 0 16 16"
-                            class="menu__image menu__image-playlist"
+                            class="menu__image menu__image_playlist"
                         >
                             <path
                                 d="M15.25 8a.75.75 0 01-.75.75H8.75v5.75a.75.75 0 01-1.5 0V8.75H1.5a.75.75 0 010-1.5h5.75V1.5a.75.75 0 011.5 0v5.75h5.75a.75.75 0 01.75.75z"
@@ -86,7 +72,7 @@
                             height="12"
                             width="12"
                             viewBox="0 0 16 16"
-                            class="menu__image menu__image-loveplaylist"
+                            class="menu__image menu__image-love-playlist"
                         >
                             <path
                                 d="M15.724 4.22A4.313 4.313 0 0012.192.814a4.269 4.269 0 00-3.622 1.13.837.837 0 01-1.14 0 4.272 4.272 0 00-6.21 5.855l5.916 7.05a1.128 1.128 0 001.727 0l5.916-7.05a4.228 4.228 0 00.945-3.577z"
@@ -97,15 +83,15 @@
                 </ul>
             </div>
             <div class="content">
-                <h3 class="albumcontainer__title">Недавно прослушанно</h3>
-                <section class="albumcontainer">
-                    <div class="albumcontainer__songcontainer">
+                <h3 class="album-container__title">Недавно прослушанно</h3>
+                <section class="album-container">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -123,15 +109,15 @@
                         </div>
                     </div>
                 </section>
-                <h3 class="albumcontainer__title">Прослушай эти шоу</h3>
-                <section class="albumcontainer">
-                    <div class="albumcontainer__songcontainer">
+                <h3 class="album-container__title">Прослушай эти шоу</h3>
+                <section class="album-container">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -148,13 +134,13 @@
                             <p class="album__description">podcast.adnosiny.by</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -171,13 +157,13 @@
                             <p class="album__description">Peaceful instrumentals to help you keep calm.</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/4.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -194,13 +180,13 @@
                             <p class="album__description">Мностранный это нечто</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -217,13 +203,13 @@
                             <p class="album__description">Podcast.adnosiny.by.</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -240,13 +226,13 @@
                             <p class="album__description">Peaceful instrumentals to help you keep calm.</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -263,13 +249,13 @@
                             <p class="album__description">podcast.adnosiny.by</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/6.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -287,15 +273,15 @@
                         </div>
                     </div>
                 </section>
-                <h3 class="albumcontainer__title">Выбор редакции (чарты)</h3>
-                <section class="albumcontainer">
-                    <div class="albumcontainer__songcontainer">
+                <h3 class="album-container__title">Выбор редакции (чарты)</h3>
+                <section class="album-container">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -313,13 +299,13 @@
                         </div>
                     </div>
 
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -337,13 +323,13 @@
                         </div>
                     </div>
 
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/4.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -361,13 +347,13 @@
                         </div>
                     </div>
 
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/6.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -385,13 +371,13 @@
                         </div>
                     </div>
 
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/2.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -409,13 +395,13 @@
                         </div>
                     </div>
 
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -432,13 +418,13 @@
                             <p class="album__description">Podcast.adnosiny.by.</p>
                         </div>
                     </div>
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/5.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -456,15 +442,15 @@
                         </div>
                     </div>
                 </section>
-                <h3 class="albumcontainer__title">Развитие</h3>
-                <section class="albumcontainer">
-                    <div class="albumcontainer__songcontainer">
+                <h3 class="album-container__title">Развитие</h3>
+                <section class="album-container">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/7.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -482,13 +468,13 @@
                         </div>
                     </div>
 
-                    <div class="albumcontainer__songcontainer">
+                    <div class="album-container__song-container">
                         <div class="album">
-                            <div class="album__image_container">
+                            <div class="album__image-container">
                                 <img src="./images/albums/1.jpg" alt="icon" class="album__image" />
-                                <button class="playbtn playbtn-album">
+                                <button class="play-btn play-btn_album">
                                     <svg
-                                        class="playbtn__image playbtn__image-album"
+                                        class="play-btn__image play-btn__image_album"
                                         role="img"
                                         height="16"
                                         xmlns="http://www.w3.org/2000/svg"
@@ -509,7 +495,7 @@
             </div>
         </div>
 
-        <div class="audioplayer">
+        <div class="audio-player">
             <div class="song">
                 <img src="./images/assets/1.jpg" alt="" class="song__icon" />
                 <div class="song__info">
@@ -524,7 +510,7 @@
                     </svg>
                 </button>
             </div>
-            <div class="audioplayer__interface">
+            <div class="audio-player__interface">
                 <div class="action">
                     <button class="action__order">
                         <svg role="img" height="16" width="16" viewBox="0 0 16 16">
@@ -543,10 +529,10 @@
                             ></path>
                         </svg>
                     </button>
-                    <button class="playbtn">
+                    <button class="play-btn">
                         <svg
                             role="img"
-                            class="playbtn__image"
+                            class="play-btn__image"
                             height="16"
                             xmlns="http://www.w3.org/2000/svg"
                             width="16"
@@ -561,7 +547,7 @@
                         <svg
                             role="img"
                             height="16"
-                            class="playbtn__image"
+                            class="play-btn__image"
                             width="16"
                             viewBox="0 0 16 16"
                             xmlns="http://www.w3.org/2000/svg"
@@ -581,12 +567,12 @@
                 </div>
                 <div class="action__progress">
                     <span class="action__time">0:21</span>
-                    <input class="action__progress-range" type="range" min="0" max="100" step="1" value="21" />
+                    <input class="action__progress_range" type="range" min="0" max="100" step="1" value="21" />
                     <span class="action__time">2:04</span>
                 </div>
             </div>
             <div class="options">
-                <button class="options__volumeicon">
+                <button class="options__volume-icon">
                     <svg
                         role="presentation"
                         height="16"

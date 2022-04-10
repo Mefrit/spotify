@@ -5,7 +5,7 @@
   padding-top: 24px;
   padding-left: 22px;
 }
-.menu__actions-playlist {
+.menu__actions_playlist {
   margin-top: 30px;
 }
 .menu__logo {
@@ -24,7 +24,7 @@
   text-decoration: none;
   color: #b3b3b3;
 }
-.menu__link-active {
+.menu__link_active {
   color: #feffff;
 }
 .menu__action {
@@ -51,24 +51,24 @@
   margin-right: 15px;
   fill: #b3b3b3;
 }
-.menu__image-active {
+.menu__image_active {
   fill: #feffff;
 }
-.menu__action-active {
+.menu__action_active {
   color: #feffff;
 }
-.menu__actions-playlist {
+.menu__actions_playlist {
   padding-bottom: 10px;
   border-bottom: 1px solid #b3b3b319;
 }
-.menu__image-playlist {
+.menu__image_playlist {
   fill: #100e0e;
   background: #b9b8b8;
   padding: 6px;
   width: 23px;
   height: 23px;
 }
-.menu__image-loveplaylist {
+.menu__image-love-playlist {
   padding: 6px;
   width: 23px;
   height: 23px;

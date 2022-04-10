@@ -1,5 +1,5 @@
 @import "./colors.less";
-.albumcontainer {
+.album-container {
     padding: 15px 25px;
     display: flex;
     overflow: auto;
@@ -12,7 +12,7 @@
         padding-left: 25px;
     }
 }
-.songcontainer {
+.song-container {
     box-sizing: border-box;
     display: flex;
 }
@@ -25,7 +25,7 @@
     width: 185px;
     padding: 15px;
     box-sizing: border-box;
-    &__image_container {
+    &__image-container {
         display: inline-block;
         border-radius: 10px;
         width: 100%;
@@ -40,24 +40,25 @@
     }
     &__title {
         padding-bottom: 8px;
+        margin: 0;
         width: 100%;
-        font-size: 0.75rem;
+        font-size: 0.7rem;
         font-weight: 900;
     }
     &__description {
         width: 100%;
         color: @gray;
-        font-size: 0.655rem;
-        font-family: "Montserrat", sans-serif;
+        font-size: 0.6rem;
+        font-family: "MontserratRegular", "MontserratBold", "MontserratItalic", sans-serif;
     }
 }
-.albumcontainer::-webkit-scrollbar-track {
+.album-container::-webkit-scrollbar-track {
     background-color: @black;
 }
-.albumcontainer::-webkit-scrollbar {
+.album-container::-webkit-scrollbar {
     width: 12px;
 }
-.albumcontainer::-webkit-scrollbar-thumb {
+.album-container::-webkit-scrollbar-thumb {
     background-color: @scrol_color;
     border-radius: 1px;
 }
@@ -65,11 +66,11 @@
     border-radius: 5px;
     transition: 0.3s;
     background-color: @album_back;
-    .playbtn-album {
+    .play-btn_album {
         opacity: 0;
     }
 }
-.playbtn {
+.play-btn {
     background-color: @white;
     width: 28px;
     height: 28px;
@@ -82,22 +83,22 @@
         transform: scale(0.8);
         cursor: pointer;
     }
-    &__image-album {
+    &__image_album {
         transform: scale(1);
     }
 }
-.playbtn-album {
+.play-btn_album {
     opacity: 0;
     background-color: @green;
     width: 40px;
     height: 40px;
-    box-shadow: 0px 5px 10px @black_play_album;
+    box-shadow: 0 5px 10px @black_play_album;
     position: relative;
     top: -50px;
     left: 105px;
 }
 .album:hover {
-    .playbtn-album {
+    .play-btn_album {
         cursor: pointer;
         transition: 0.3s;
         opacity: 1;

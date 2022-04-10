@@ -1,6 +1,6 @@
 @import "./colors.less";
-.audioplayer {
-    border-top: 0.1px solid @border_gray;
+.audio-player {
+    border-top: 1px solid @border_gray;
     color: @white;
     background-color: @back_audio;
     display: flex;
@@ -29,16 +29,16 @@
     }
     &__title {
         color: @white;
-        font-size: 0.875rem;
+        font-size: 0.8rem;
     }
     &__author {
         color: @btn_gray;
-        font-size: 0.6875rem;
+        font-size: 0.7rem;
     }
     &__add2collection {
         cursor: pointer;
         background: none;
-        border: 0px;
+        border: 0;
         margin-left: 15px;
     }
     &__imgadd2collection {
@@ -73,25 +73,25 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__progress-range {
+    &__progress_range {
         width: 100%;
         background-color: @back_progress;
         height: 2px;
     }
 
     &__time {
-        margin: 0px 5px;
+        margin: 0 5px;
         color: @btn_gray;
-        font-size: 0.6875rem;
+        font-size: 0.7rem;
     }
 }
 .options {
     display: flex;
     align-items: center;
     margin-right: 15px;
-    &__volumeicon {
+    &__volume-icon {
         background: none;
-        border: 0px;
+        border: 0;
         cursor: pointer;
     }
     &__image {
@@ -106,7 +106,7 @@
         color: red;
     }
 }
-.songprogress {
+.song-progress {
     height: 5px;
     border-top: 3px solid @white;
 }
