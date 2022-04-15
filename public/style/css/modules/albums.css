@@ -1,0 +1,103 @@
+.album-container {
+  padding: 15px 25px;
+  display: flex;
+  overflow: auto;
+  grid-gap: 24px;
+  width: 100%;
+  box-sizing: border-box;
+}
+.album-container__title {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.song-container {
+  box-sizing: border-box;
+  display: flex;
+}
+.album {
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 185px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.album__image-container {
+  display: inline-block;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 160px;
+  padding-bottom: 15px;
+  height: auto;
+  box-sizing: content-box;
+}
+.album__image {
+  width: 100%;
+  border-radius: 5px;
+}
+.album__title {
+  padding-bottom: 8px;
+  margin: 0;
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+.album__description {
+  width: 100%;
+  color: #b9b8b8;
+  font-size: 0.6rem;
+  font-family: "MontserratRegular", "MontserratBold", "MontserratItalic", sans-serif;
+}
+.album-container::-webkit-scrollbar-track {
+  background-color: #100e0e;
+}
+.album-container::-webkit-scrollbar {
+  width: 12px;
+}
+.album-container::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 1px;
+}
+.album:hover {
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: #282828;
+}
+.album:hover .play-btn_album {
+  opacity: 0;
+}
+.play-btn {
+  background-color: #feffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-size: 120%;
+}
+.play-btn__image {
+  margin: auto;
+  margin-top: 3px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.play-btn__image_album {
+  transform: scale(1);
+}
+.play-btn_album {
+  opacity: 0;
+  background-color: #1ed760;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 5px 10px #05050575;
+  position: relative;
+  top: -50px;
+  left: 105px;
+}
+.album:hover .play-btn_album {
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 1;
+}

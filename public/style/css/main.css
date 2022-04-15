@@ -1,28 +1,323 @@
-* {
-  margin: 0px;
-  padding: 0px;
+.album-container {
+  padding: 15px 25px;
+  display: flex;
+  overflow: auto;
+  grid-gap: 24px;
+  width: 100%;
   box-sizing: border-box;
+}
+.album-container__title {
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 25px;
+}
+.song-container {
+  box-sizing: border-box;
+  display: flex;
+}
+.album {
+  transition: 0.3s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 185px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+.album__image-container {
+  display: inline-block;
+  border-radius: 10px;
+  width: 100%;
+  max-height: 160px;
+  padding-bottom: 15px;
+  height: auto;
+  box-sizing: content-box;
+}
+.album__image {
+  width: 100%;
+  border-radius: 5px;
+}
+.album__title {
+  padding-bottom: 8px;
+  margin: 0;
+  width: 100%;
+  font-size: 0.7rem;
+  font-weight: 900;
+}
+.album__description {
+  width: 100%;
+  color: #b9b8b8;
+  font-size: 0.6rem;
+  font-family: "MontserratRegular", "MontserratBold", "MontserratItalic", sans-serif;
+}
+.album-container::-webkit-scrollbar-track {
+  background-color: #100e0e;
+}
+.album-container::-webkit-scrollbar {
+  width: 12px;
+}
+.album-container::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 1px;
+}
+.album:hover {
+  border-radius: 5px;
+  transition: 0.3s;
+  background-color: #282828;
+}
+.album:hover .play-btn_album {
+  opacity: 0;
+}
+.play-btn {
+  background-color: #feffff;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: none;
+  background-size: 120%;
+}
+.play-btn__image {
+  margin: auto;
+  margin-top: 3px;
+  transform: scale(0.8);
+  cursor: pointer;
+}
+.play-btn__image_album {
+  transform: scale(1);
+}
+.play-btn_album {
+  opacity: 0;
+  background-color: #1ed760;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 5px 10px #05050575;
+  position: relative;
+  top: -50px;
+  left: 105px;
+}
+.album:hover .play-btn_album {
+  cursor: pointer;
+  transition: 0.3s;
+  opacity: 1;
+}
+.audio-player {
+  border-top: 1px solid #b3b3b319;
+  color: #feffff;
+  background-color: #181818;
+  display: flex;
+  min-height: 10%;
+  font-family: "MontserratRegular", "MontserratBold", "MontserratItalic", sans-serif;
+  justify-content: space-between;
+  align-items: center;
+}
+.audio-player__interface {
+  align-items: center;
+  width: 35%;
+  display: flex;
+  flex-direction: column;
+}
+.song {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-left: 5px;
+  cursor: pointer;
+}
+.song__icon {
+  width: 70px;
+  cursor: pointer;
+}
+.song__info {
+  margin-left: 10px;
+}
+.song__title {
+  color: #feffff;
+  font-size: 0.8rem;
+}
+.song__author {
+  color: #b3b3b3;
+  font-size: 0.7rem;
+}
+.song__add2collection {
+  cursor: pointer;
+  background: none;
+  border: 0;
+  margin-left: 15px;
+}
+.song__imgadd2collection {
+  fill: #b3b3b3;
+}
+.action {
+  display: flex;
+  width: 100%;
+  max-width: 200px;
+  justify-content: space-around;
+  margin-bottom: 5px;
+}
+.action__back,
+.action__forward,
+.action__order,
+.action__turn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  fill: #b3b3b3;
+}
+.action__back:hover,
+.action__forward:hover,
+.action__order:hover,
+.action__turn:hover {
+  fill: #feffff;
+}
+.action__progress {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.action__progress_range {
+  width: 100%;
+  background-color: #b3b3b3;
+  height: 2px;
+}
+.action__time {
+  margin: 0 5px;
+  color: #b3b3b3;
+  font-size: 0.7rem;
+}
+.options {
+  display: flex;
+  align-items: center;
+  margin-right: 15px;
+}
+.options__volume-icon {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.options__image {
+  fill: #b3b3b3;
+  margin-right: 8px;
+  margin-top: 5px;
+}
+.options__volume {
+  width: 100%;
+  background-color: #b3b3b3;
+  height: 2px;
+  color: red;
+}
+.song-progress {
+  height: 5px;
+  border-top: 3px solid #feffff;
+}
+.menu {
+  width: 270px;
+  background-color: #100e0e;
+  padding-top: 24px;
+  padding-left: 22px;
+}
+.menu__actions_playlist {
+  margin-top: 30px;
+}
+.menu__logo {
+  width: 120px;
+  padding-bottom: 25px;
+}
+.menu__logo svg {
+  color: #feffff;
+}
+.menu__actions {
+  margin-left: -5px;
+  padding-bottom: 20px;
+  list-style: none;
+}
+.menu__link {
+  text-decoration: none;
+  color: #b3b3b3;
+}
+.menu__link_active {
+  color: #feffff;
+}
+.menu__action {
+  margin-bottom: 5px;
+  cursor: pointer;
+  font-weight: 900;
+  font-size: 0.725rem;
+  line-height: 1rem;
+  text-transform: none;
+  letter-spacing: normal;
+  display: flex;
+  align-items: center;
+  border: none;
+  padding: 5px;
+  background: none;
+}
+.menu__action:hover .menu__link {
+  color: #feffff;
+}
+.menu__action:hover .menu__image {
+  fill: #feffff;
+}
+.menu__image {
+  margin-right: 15px;
+  fill: #b3b3b3;
+}
+.menu__image_active {
+  fill: #feffff;
+}
+.menu__action_active {
+  color: #feffff;
+}
+.menu__actions_playlist {
+  padding-bottom: 10px;
+  border-bottom: 1px solid #b3b3b319;
+}
+.menu__image_playlist {
+  fill: #100e0e;
+  background: #b9b8b8;
+  padding: 6px;
+  width: 23px;
+  height: 23px;
+}
+.menu__image-love-playlist {
+  padding: 6px;
+  width: 23px;
+  height: 23px;
+  color: #b3b3b3;
+  background: linear-gradient(135deg, #450af5, #c4efd9);
 }
 html,
 body {
   height: 100%;
   overflow: hidden;
+  margin: 0;
+  padding: 0;
 }
 .container {
   display: flex;
   width: 100%;
-  min-height: 100%;
-  height: 100vh;
-}
-.menu {
-  width: 300px;
-  background-color: red;
-  min-height: 100%;
+  height: 90%;
+  max-height: 100vh;
+  background-color: #b9b8b8;
+  font-family: "MontserratRegular", "MontserratBold", "MontserratItalic", sans-serif;
 }
 .content {
   width: 100%;
   color: #feffff;
-  background-color: #151313;
-  background-size: 40px 40px;
-  background-image: repeating-linear-gradient(45deg, #151313 0, #151313 4px, #100e0e 0, #100e0e 50%);
+  background: linear-gradient(174deg, #1e1e1e 0%, #161616 60%, #121212 100%);
+  padding-top: 75px;
+  overflow: auto;
+}
+.content::-webkit-scrollbar-track {
+  background-color: #100e0e;
+}
+.content::-webkit-scrollbar {
+  width: 12px;
+  /* ширина scrollbar */
+}
+.content::-webkit-scrollbar-thumb {
+  background-color: #6e6e6e;
+  border-radius: 1px;
 }
