@@ -107,6 +107,7 @@
   background-color: #181818;
   display: flex;
   min-height: 10%;
+  font-family: "MontserratRegular", "MontserratBold", "MontserratItalic", sans-serif;
   justify-content: space-between;
   align-items: center;
 }
@@ -214,7 +215,6 @@
 .menu {
   width: 270px;
   background-color: #100e0e;
-  min-height: 100%;
   padding-top: 24px;
   padding-left: 22px;
 }
